@@ -6,7 +6,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
     var page = function () { 
-        var file = 'assets/index.html';
+        var file = 'index.html';
 		var buff = fs.readFileSync(file);
 		
 		return (buff.toString());  
